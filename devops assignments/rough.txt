@@ -1,0 +1,62 @@
+Identify the conflicting files (Git will highlight them after a merge attempt).
+Open the files with conflicts and manually resolve them by choosing the correct changes.
+Remove the conflict markers (<<<<<<<, =======, >>>>>>>).
+Stage the resolved files using git add.
+Complete the merge by running git commit.
+
+Review both changes carefully to determine which version is correct or combine them if needed. This decision depends on the context of the code and project requirements.
+
+<<<<<<<: Marks the beginning of your branch's changes.
+=======: Separates your changes from the incoming changes.
+>>>>>>>: Marks the end of the incoming branch's changes.
+You need to edit the file to remove these markers and keep the appropriate changes.
+
+A merge conflict happens when Git cannot automatically merge changes because different changes were made to the same part of a file in two branches. It typically occurs when two developers edit the same line of code or make conflicting changes to the same file.
+
+It ensures the code is consistent and functional. Git pauses the merge process until the conflict is resolved to prevent incomplete or broken code from being merged.
+
+Deliver potentially shippable increments of the product at the end of each Sprint.
+Collaborate on Sprint Planning, task breakdown, and execution.
+Self-organize to decide how to achieve the Sprint Goals.
+Maintain quality and follow technical best practices.
+
+
+A time-boxed period (usually 1–4 weeks) during which the Scrum Team works to deliver a specific set of Product Backlog items.
+
+The Product Owner presents prioritized backlog items.
+The team selects items to complete in the Sprint.
+The team defines the Sprint Goal and creates a plan for achieving it.
+It allows the team to reflect on the Sprint and identify areas for improvement.
+The team discusses what went well, what didn’t, and agrees on actionable steps to enhance future Sprints.
+
+A User Story is a brief, simple description of a feature or functionality written from the user’s perspective.
+Format: As a [type of user], I want [action] so that [benefit].
+Story Points are a unit of measure used to estimate the effort required to complete a task, considering complexity, risk, and size.
+
+An EPIC is a large user story that can be broken down into smaller, more manageable user stories.
+
+A prioritized list of features, enhancements, and bug fixes that the Scrum Team needs to deliver.
+
+
+A subset of the Product Backlog that the team commits to completing during a Sprint.
+It includes tasks necessary to deliver the selected backlog items.
+
+Sprint Planning: Define the Sprint Goal and plan work.
+Daily Stand-up: Track progress and address blockers.
+Sprint Review: Present work to stakeholders and gather feedback.
+Sprint Retrospective: Reflect on the Sprint and improve processes.
+
+To inspect the product increment and gather stakeholder feedback to improve future work.
+
+Jira, Trello, Asana, Monday.com, Azure DevOps, and ClickUp.
+
+
+
+
+
+
+
+
+
+
+

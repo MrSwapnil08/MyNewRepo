@@ -1,0 +1,68 @@
+Step 1: Started an ec2 instance
+#Run the below command to ensure your package manager is up-to-date: 
+Step2: sudo yum update -y
+For Amazon Linux or Amazon Linux 2, use the following command:
+          
+Step 3: sudo yum install -y docker
+
+Start the docker service:
+Step 4: sudo service docker start
+or
+#After installation, start the Docker service and enable it to run on boot:
+step 4: sudo systemctl start docker    
+sudo systemctl enable docker
+
+To run Docker commands without sudo, add your user (typically ec2-user) to the Docker group:
+
+Step 5: sudo usermod -aG docker ec2-user
+
+Restart ec2 instance
+
+Step 6: Write a small streamlit program in python file
+
+import streamlit as st
+import pandas as pd
+
+data = {
+        'Task' : ['Extract', 'Transform','Load'],
+        'Status' : ['completed', 'INprogress', 'Pending']
+}
+
+df = pd.DataFrame(data)
+st.write('ETL Pipeline execution Status', df)
+
+Step 7: Saved it and copied it from local machine to ec2 
+by dragging the file to to SSH browser (SCP) Yellow round icon.
+
+Step 8: Install Python on ec2
+sudo yum install python3-pip
+
+step 9: Install Streamlit on ec2
+pip install streamlit
+
+
+Step 10: Open ports to access Streamlit application from internet
+o	Inbounds Rules
+	Add 8501 port in inbounds rule
+
+Then the run the copied file
+step 10: streamlit run etl.py
+
+Step 11: copy the external URL given after running the above command.
+
+While copying make sure the program is running some times it gets closed. 
+
+copy url and paste it in chrome. 
+
+make sure the url will be like- http://44.204.40.45:8503/
+
+whatever port number at the end is there like 8503 make changes in your ec2 instance inbound rule. 
+
+
+
+
+
+
+
+
+
